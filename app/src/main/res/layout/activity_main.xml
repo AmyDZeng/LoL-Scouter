@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:id="@+id/main_bg"
+        android:src="@drawable/default_bg"/>
+
+    <TextView android:text="Enter Text:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="32dp"
+        android:paddingTop="24dp"
+        android:id="@+id/title"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        />
+
+    <EditText
+        android:id="@+id/siteUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:textColor="@color/white"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:background="@android:color/transparent"
+        android:paddingBottom="32dp"
+        />
+
+    <TextView
+        android:id="@+id/et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@+id/enterButton"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        />
+
+    <Button
+        android:id="@+id/enterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/siteUrl"
+        android:text="Find Summoner"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:paddingTop="8dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Champion"
+        android:id="@+id/findChampBtn"
+        android:layout_toRightOf="@+id/enterButton"
+        android:layout_below="@+id/siteUrl"
+        android:paddingLeft="8dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:paddingTop="8dp"
+        />
+
+</RelativeLayout>
